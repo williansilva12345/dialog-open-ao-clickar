@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    
+  
+   <dialog id='d1' open>
+   
+      <p> Ola mundo </p>
+    
+    <p> Dialog aqui mesmo </p>
+    
+    
+    </dialog>
+    
+     <button onclick='abrir()'> Abrir botao </button>
+     <button onclick='fechar()'> Fechar Botao </button>
+ 
+ 
+  
+</body>
+          
+      <script>
+      
+  
+      
+      function abrir(){
+        document.getElementById('d1').setAttribute('open','')
+      
+      }
+      function fechar (){
+      document.getElementById('d1').removeAttribute('open')
+    }
+   </script>
+   
+</html>
