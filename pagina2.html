@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link rel="stylesheet" href="arq.css">
+
+
+</head>
+<body>
+  
+<div class="pai">
+
+  
+</div>
+  
+ 
+</body>
+<script>
+var caixa1 = document.querySelector('.pai');
+var caixa2 = document.querySelector('.filho1');
+var caixa3 = document.querySelector('.filho2');
+var btn = document.getElementById('btn');
+var cursos  = ['html','css','js','react','mysql']
+
+
+  cursos.map((el,indi)=>{
+
+    const create = document.createElement('div')
+    create.setAttribute('id','a'+indi)
+    create.setAttribute('class','curso')
+    caixa1.appendChild(create)
+    create.innerHTML =el
+    
+    const novo = document.createElement('img')
+    novo.setAttribute('src', './imgs/lixeira.png')
+    novo.setAttribute('class', 'bvb')
+    create.appendChild(novo)
+
+    novo.addEventListener('click', (evt)=>{
+           
+           caixa1.removeChild(evt.target.parentNode)
+
+    })
+
+  })
+
+
+
+</script>
+</html>

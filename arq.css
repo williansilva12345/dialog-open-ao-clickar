@@ -1,0 +1,25 @@
+.curso {
+    font-size: 16px; /* Define o tamanho de fonte padrão */
+    color: black; /* Define a cor padrão */
+    background: orange;
+    margin: 22px;
+       background: orange;
+    height: 34px;
+    margin: 34px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  #tal{
+    background: orange;
+    height: 34px;
+    margin: 34px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .bvb{
+    height: 52px;
+width: 69px;
+position: absolute;
+left: 94%;
+
+  }
